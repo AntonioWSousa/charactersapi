@@ -20,6 +20,7 @@ public class CharacterData {
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
                 .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(ENDPOINT_DYNAMO, REGION_DYNAMO))
                 .build();
+        
 	    DynamoDB dynamoDB = new DynamoDB(client);
 
 	    Table table = dynamoDB.getTable("tb_character");
