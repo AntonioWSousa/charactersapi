@@ -1,12 +1,12 @@
 package com.antoniowsousa.apisnkvscapcom.services;
 
 import org.springframework.stereotype.Service;
-
 import com.antoniowsousa.apisnkvscapcom.repositories.CharacterRepository;
-
+import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@RequiredArgsConstructor
 @Service
 public class CharacterService {
 	
